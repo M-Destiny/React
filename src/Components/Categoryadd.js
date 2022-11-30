@@ -1,24 +1,37 @@
 import React from 'react'
+// import { useRef, useState } from 'react';
 
-export default function Categoryadd() {
+export default function Categoryadd(props) {
+    console.log(props);
+    // var props = addcat;
     return (
         <div className='container'>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Catgory</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                    props.addcat!="" && (
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>{props.addcat}</td>
+                            <td><button className='btn btn-warning'>Edit</button></td>
+                            <td><button className='btn btn-danger'>Delete</button></td>
+                        </tr>
+                    )}
+
+                </tbody>
+            </table>
+
+
         </div>
     )
 }
