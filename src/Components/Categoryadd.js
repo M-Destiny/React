@@ -9,7 +9,7 @@ export default function Categoryadd(props) {
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        {/* <th scope="col">#</th> */}
                         <th scope="col">Catgory</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
@@ -19,9 +19,9 @@ export default function Categoryadd(props) {
                 </thead>
                 <tbody>
                     {
-                    props.addcat!="" && (
+                    props.addcat!=="" && (
                         <tr>
-                            <th scope="row">1</th>
+                            {/* <th scope="row">1</th> */}
                             <td>{props.addcat}</td>
                             <td><button className='btn btn-warning'>Edit</button></td>
                             <td><button className='btn btn-danger'>Delete</button></td>
