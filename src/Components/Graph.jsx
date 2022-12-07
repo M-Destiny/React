@@ -1,7 +1,8 @@
 import React from 'react'
+// import Chart from './Chart'
 // import HighCharts from 'highcharts';
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
+// import Highcharts from 'highcharts';
+// import HighchartsReact from 'highcharts-react-official';
 
 export default function Graph(props) {
     // console.log(props)
@@ -26,6 +27,7 @@ export default function Graph(props) {
                 <b>Percentage: {props.result.e}  % </b>
 
             </p>
+            {/* <Chart/> */}
         </div>
     )
 }

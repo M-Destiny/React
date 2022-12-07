@@ -1,5 +1,6 @@
 import Graph from "./Graph";
 import { useState } from "react";
+import Chart from "./Chart";
 export default function About() {
 
   const [physics, setPhysics] = useState(0);
@@ -11,14 +12,17 @@ export default function About() {
     // console.log(e.target.value);
     setPhysics(e.target.value);
   }
+
   function chm(e) {
     // console.log(e.target.value);
     setChemistry(e.target.value);
   }
+
   function mts(e) {
     // console.log(e.target.value);
     setMaths(e.target.value);
   }
+
   function myfunc() {
     var total = parseInt(physics) + parseInt(chemistry) + parseInt(maths);
     var percentage = (total / 300) * 100;
@@ -26,11 +30,10 @@ export default function About() {
     console.log(total);
     // console.log('object');
     setData({ a: physics, b: chemistry, c: maths, d: total, e: percentage })
-    console.log(data);
-
-
-
+    // console.log(data);
   }
+
+
   return (
     <div className="container">
 
@@ -41,6 +44,7 @@ export default function About() {
       {/* {physics}{chemistry}{maths} */}
 
       <Graph result={data} />
+      <Chart result={data} />
     </div>
   )
 }

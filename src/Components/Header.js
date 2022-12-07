@@ -18,7 +18,13 @@ export default function Header() {
                 <Link class="nav-link active" aria-current="page" to="about">About</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="category"> CAtegoty</Link>
+                <Link class="nav-link active" aria-current="page" to="category"> Category</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="contact"> Contact</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="Api">Api Example</Link>
               </li>
               {/* <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="about">Categories</Link>

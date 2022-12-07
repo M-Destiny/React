@@ -9,6 +9,9 @@ import About from './Components/About';
 import Single from './Components/Single';
 import Categoryadd from './Components/Categoryadd';
 import Categorylist from './Components/Categorylist';
+import Contact from './Components/Contact';
+import Api from './Components/Api';
+import SingleProduct from './Components/SingleProduct';
 
 const router1 = createBrowserRouter([
     {
@@ -40,7 +43,23 @@ const router1 = createBrowserRouter([
             {
                 path: '/category/add',
                 element: <Categoryadd />
-            }
+            },
+            {
+                path: 'contact',
+                element: <Contact />,
+
+            },
+            {
+                path: 'api',
+                element: <Api />,
+
+            },
+            {
+                path: "product/:pid",
+                element: <SingleProduct />,
+
+            },
+
         ]
     }
 ])
