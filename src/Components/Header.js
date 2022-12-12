@@ -26,6 +26,12 @@ export default function Header() {
               <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="Api">Api Example</Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="userapi">User Api</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="userpost">User Posts</Link>
+              </li>
               {/* <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="about">Categories</Link>
               </li> */}

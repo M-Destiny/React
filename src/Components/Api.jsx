@@ -21,7 +21,7 @@ export default function Api() {
             <div className='row'>
                 {
                     record && record.length > 0 && record.map(obj => <div className='col-xl-3 text-center mt-4 mb-4'>
-                        <Link to={'/product/'+obj.id}><img src={obj.image} className='img-fluid' /></Link>
+                        <Link to={'/product/'+obj.id}><img src={obj.image} className='img-fluid' alt=''/></Link>
                         <h3>{obj.title}</h3>
                         <p>{obj.price}</p>
                         <b><p>{obj.category}</p>

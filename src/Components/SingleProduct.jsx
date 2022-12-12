@@ -29,7 +29,7 @@ export default function SingleProduct() {
                         <h1 className='text-center text-uppercase mb-5'>Product Page</h1>
                         <div className='row'>
                             <div className='col-xl-6'>
-                                <img src={record.image} className='img-fluid' alt='product image' />
+                                <img src={record.image} className='img-fluid' alt='product' />
                             </div>
                             <div className='col-xl-6 ps-5'>
                                 <h1>{record.title}</h1>

@@ -12,6 +12,8 @@ import Categorylist from './Components/Categorylist';
 import Contact from './Components/Contact';
 import Api from './Components/Api';
 import SingleProduct from './Components/SingleProduct';
+import Userapi from './Components/Userapi';
+import Userpost from './Components/Userpost';
 
 const router1 = createBrowserRouter([
     {
@@ -57,6 +59,16 @@ const router1 = createBrowserRouter([
             {
                 path: "product/:pid",
                 element: <SingleProduct />,
+
+            },
+            {
+                path: "userapi",
+                element: <Userapi/>,
+
+            },
+            {
+                path: "userpost",
+                element: <Userpost/>,
 
             },
 
