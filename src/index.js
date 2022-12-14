@@ -14,6 +14,8 @@ import Api from './Components/Api';
 import SingleProduct from './Components/SingleProduct';
 import Userapi from './Components/Userapi';
 import Userpost from './Components/Userpost';
+import Usestateref from './Components/Usestateref';
+import Table from './Components/Table';
 
 const router1 = createBrowserRouter([
     {
@@ -69,6 +71,16 @@ const router1 = createBrowserRouter([
             {
                 path: "userpost",
                 element: <Userpost/>,
+
+            },
+            {
+                path: "fname",
+                element: <Usestateref/>,
+
+            },
+            {
+                path: "table",
+                element: <Table/>,
 
             },
 
