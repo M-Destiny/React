@@ -27,9 +27,10 @@ export default function Table() {
         }
         // console.log(arr);
         for (var i = 0; i < arr.length; i++) {
-            var p = document.createElement('p')
+            var p = document.createElement('tr','/tr')
             p.innerHTML = arr[i]
             document.getElementById('tdata').appendChild(p)
+            // console.log(p);
 
             // console.log(arr[i]);
         }
