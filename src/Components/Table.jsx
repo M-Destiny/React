@@ -18,22 +18,13 @@ export default function Table() {
             setNum(tableout)
             var tt = arr.push(tableout)
             setArr(tt)
-
-            // document.write(tableout + '<br />')
-            // if (i !== 10) {
-            //     document.write(tableout +"<br>");
-            // } else { }
-
         }
-        // console.log(arr);
         for (var i = 0; i < arr.length; i++) {
-            var p = document.createElement('tr','/tr')
-            p.innerHTML = arr[i]
+            var p = document.createElement('tr', '/tr')
+            p.innerHTML = `<td>${arr[i]}</td>`
             document.getElementById('tdata').appendChild(p)
-            // console.log(p);
-
-            // console.log(arr[i]);
         }
+        console.log(arr)
     }
 
     return (
@@ -42,13 +33,14 @@ export default function Table() {
             <input type="text" className='form-control mb-3' ref={input} />
             <button className='btn btn-primary' onClick={ctable}>Submit</button>
             {/*  create a multiplication table */}
-            <table>
+            <table className='table table-light table-striped-columns'>
                 <thead>
-                    <th scope="col">Table</th>
+                    <tr>
+                        <th scope="col">Table</th>
+                    </tr>
                 </thead>
-                <tr>
-                    <td id='tdata'></td>
-                </tr>
+                <tbody id='tdata'>
+                </tbody>
 
 
             </table>
